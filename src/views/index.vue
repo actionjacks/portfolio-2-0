@@ -1,15 +1,15 @@
 <template>
-  <div class="main_wrapper"></div>
-  <Content />
-  <router-view />
+  <div class="main_wiew">
+    <ThemeSwitcher />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Content from "@/views/index.vue";
+import ThemeSwitcher from "@/components/ThemeSwitcher.vue";
 
 export default defineComponent({
-  components: { Content },
+  components: { ThemeSwitcher },
   setup() {
     return {};
   },
